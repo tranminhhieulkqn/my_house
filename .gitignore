@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.DS_Store
+*.log
+*.tsbuildinfo
+
+# Tài liệu/file nguồn tham khảo (CAD/SketchUp gốc, bản vẽ PDF, ảnh thật...) —
+# chứa thông tin thật của nhà/chủ nhà, KHÔNG commit lên repo public.
+/resources/
+/docs/

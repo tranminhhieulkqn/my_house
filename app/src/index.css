@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.app {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.control-panel {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 260px;
+  max-height: calc(100vh - 32px);
+  overflow-y: auto;
+  background: rgba(20, 20, 20, 0.75);
+  backdrop-filter: blur(6px);
+  color: #fff;
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.control-panel section {
+  margin-bottom: 16px;
+}
+
+.control-panel h3 {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.7;
+  margin-bottom: 8px;
+}
+
+.control-panel .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.control-panel input[type="color"] {
+  width: 36px;
+  height: 24px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.control-panel input[type="range"] {
+  width: 100%;
+}
+
+.control-panel input[type="text"] {
+  width: 110px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-family: monospace;
+}
+
+.control-panel .hint {
+  opacity: 0.6;
+  font-size: 12.5px;
+  line-height: 1.4;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.control-panel button {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.control-panel button.active {
+  background: #4a8cff;
+  border-color: #4a8cff;
+}
